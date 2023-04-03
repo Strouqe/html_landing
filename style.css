@@ -3,7 +3,8 @@
 }
 
 body {
-   height: 100vh;
+  height: 100vh;
+  max-width: 100vw;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -19,13 +20,12 @@ nav {
 }
 header {
   background-color: #eff0f2;
-  height: 90vh;
+  height: 100%;
 }
 .logo {
   border: 5px solid #000000;
   font-size: 17px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 8px 13px;
   cursor: default;
@@ -74,7 +74,6 @@ h2 {
 .contact_button a {
   display: inline-block;
   font-size: 18px;
-  text-transform: uppercase;
   letter-spacing: 0.14em;
   color: #000;
   border: 2px solid #000;
@@ -99,7 +98,7 @@ h2 {
   height: 100%;
 }
 .about_us {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -120,14 +119,14 @@ h2 {
   letter-spacing: 0.1em;
 }
 .text_subtitle {
-  font-family: "Times New Roman", Times, serif;
+   font-family: 'Merriweather', serif;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-size: 19px;
 }
 .about_us_body {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   max-width: 60%;
   justify-content: space-between;
 }
@@ -138,7 +137,7 @@ h2 {
   letter-spacing: 0.1em;
 }
 .about_us_subtitle {
-  font-family: "Times New Roman", Times, serif;
+   font-family: 'Merriweather', serif;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-size: 19px;
@@ -266,7 +265,7 @@ h2 {
   margin: auto;
 }
 .services {
-  height: 150vh;
+  height: 180vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -304,7 +303,7 @@ h2 {
   z-index: 1;
 }
 .services_row_small_image {
-  width: 40%;
+  width: 42%;
   height: 350px;
   display: flex;
   z-index: 1;
@@ -379,7 +378,7 @@ h2 {
 }
 .team{
    min-height: 130%;
-   width: 100vw;
+   width: 100%;
    display: flex;
    flex-flow: column;
    align-items: center;
@@ -389,7 +388,7 @@ h2 {
   flex-flow: row wrap;
   justify-content: center;
   height: 75%;
-  width: 80%;
+  width: 76.2%;
   margin-top: 5rem;
 }
 .team_image_wrapper {
@@ -400,7 +399,7 @@ h2 {
    height: 440px;
    display: flex;
    padding: 5% 5%;
-   margin: 5px;
+   margin: 10px;
 }
 .team_image:hover .team_member_text{
    display: flex;
@@ -445,22 +444,294 @@ h2 {
    background-size: cover;
  }
  .team_image2 {
-   background: url(./assets/team/team_2.png) center no-repeat;
+   background: url(./assets/team/team_2.png);
    background-size: cover;
  }
 .team_image3 {
-      background: url(./assets/team/team_3.png) center no-repeat;
+      background: url(./assets/team/team_3.png);
       background-size: cover;
 }
 .team_image4 {
-      background: url(./assets/team/team_4.png) center no-repeat;
+      background: url(./assets/team/team_4.png);
       background-size: cover;
 }
 .team_image5 {
-      background: url(./assets/team/team_5.png) center no-repeat;
+      background: url(./assets/team/team_5.png);
       background-size: cover;
 }
 .team_image6 {
-      background: url(./assets/team/team_6.png) center no-repeat;
+      background: url(./assets/team/team_6.png);
       background-size: cover;
+}
+
+.swiper {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafa;
+}
+.swiper_card {
+   width: 60%;
+   height: 80%;
+   display: flex;
+   flex-flow: row;
+   align-items: center;
+   justify-content: center;
+   background-color: #fff;
+   padding: 0;
+   margin: auto;
+   background-color: #f8fafa;
+}
+.swiper_card_image {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.swiper_card_text {
+   width: 80%;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding: 50px 60px;
+}
+.swiper_card_title {
+   font-size: 15px;
+   font-weight: 400;
+   color: #787878;
+   font-style: italic;
+   margin: 0 0 20px 0;
+}
+.swiper_card_title span {
+   font-family: 'Merriweather', serif;
+   font-size: 20px;
+   font-weight: 700;
+   letter-spacing: 0.06em;
+   color: #000000;
+   font-style: normal;
+}
+.swiper_card_subtitle {
+   font-family: 'Raleway', sans-serif;
+   line-height: 27px;
+   font-weight: 400;
+   letter-spacing: 0.06em;
+   color: #000000;
+   margin: 0 0 25px 0;
+}
+
+.companies {
+   height: 40%;
+   width: 60%;
+   margin: 0;
+}
+.companies_logos {
+   height: 80%;
+   max-width: 80vw;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   margin: 0;
+   margin-top: -8%;
+   padding: 0;
+}
+.companies_logo {
+   margin: 0;
+   padding: 0;
+   height: 10%;
+   width: 15%;
+}
+.companies_logo img{
+   scale: 0.15;
+   margin: 0;
+}
+
+.contacts {
+   height: 100%;
+   width: 100%;
+   background: url(./assets/footer_background.png);
+   background-size: cover;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+.contacts_body {
+   width: 90%;
+   height: 100%;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;   
+   align-items: center;
+   margin: 5% 0 0 0;
+}
+.form {
+   width: 35%;
+   height: 55%;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(2, 22, 35, 0.7);
+   padding: 15px;
+   margin: 15px;
+}
+.form form{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-flow: column;
+}
+form input {
+   height: 40px;
+   border: 1px solid rgba(255, 255, 255, 0);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+   margin: 0 0 20px 0;
+   font-size: 18px;
+   color: #ffffff;
+   padding: 0 0 0 5px;
+   background: transparent;
+}
+form textarea {
+   width: 100%;
+   height: 140px;
+   border: 1px solid rgba(255, 255, 255, 0);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+   font-size: 18px;
+   color: #ffffff;
+   padding: 0 0 0 5px;
+   margin: 0 0 30px 0;
+   background: transparent;
+   resize: none;
+   overflow: auto;
+   transition-duration: 0.5s;
+}
+form input::placeholder{
+   font-size: 15px;
+   line-height: 15px;
+   color: #ffffff;
+   opacity: 0.6;
+}
+form input:focus{
+   border-bottom: 1px solid #5ed5d6;
+   outline: none;
+}
+form textarea::placeholder {
+   font-family: 'Raleway', sans-serif;
+   font-size: 15px;
+   font-weight: 400;
+   color: #ffffff;
+   opacity: 0.6;
+}
+form textarea:focus{
+   border-bottom: 1px solid #5ed5d6;
+   outline: none;
+}
+.form_button {
+   font-family: 'Raleway', sans-serif;
+   display: inline-block;
+   font-size: 18px;
+   letter-spacing: 0.14em;
+   color: #000;
+   border: 2px solid #000;
+   border-radius: 4px;
+   padding: 15px 40px;
+   text-decoration: none;
+   background-color: #5ed5d6;
+   width: 260px;
+   margin-top: 5%;
+}
+.form_button:hover {
+   background-color: #EFF0F2;
+}
+.contacts_adress {
+   width: 25%;
+   height: 55%;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgba(2, 22, 35, 0.7);
+   padding: 15px;
+   margin: 15px;
+
+}
+.contacts_adress_text {
+   width: 100%;
+   height: 20%;
+   font-size: 0.8rem;
+   display: flex;
+   flex-flow: column;
+   line-height: 0.1;
+   margin: 0 0 35px 0;
+   color: #ffffff;
+}
+.contacts_adress_email {
+   width: 100%;
+   height: 20%;
+   display: flex;
+   flex-flow: column;
+   font-family: 'Raleway', sans-serif;
+   font-size: 0.8rem;
+   font-weight: 400;
+   color: #ffffff;
+   margin: 0 0 5px 0;
+   line-height: 0.1;
+}
+.contacts_iframe{
+   width: 100%;
+   height: 60%;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(2, 22, 35, 0.7);
+
+}
+.contacts_iframe iframe{
+   width: 100%;
+   height: 100%;
+   border: 0;
+}
+footer {
+   height: 30%;
+   width: 100%;
+   background-color: #262b2e;
+}
+.footer_body {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+.footer_body_title {
+   font-family: 'Raleway', sans-serif;
+   font-size: 16px;
+   line-height: 1.4;
+   letter-spacing: 0.01em;
+   color: #ffffff;
+   margin: 40px 0 2% 0;
+}
+.footer_body_icons {
+   display: flex;
+   justify-content: center;
+
+}
+.footer_body_icon {
+   background-color: rgba(138, 138, 138, 0.4);
+   padding: 10px;
+   width: 40px;
+   height: 40px;
+   fill: #ffffff;
+   margin: 0 5px;
+}
+.footer_body_icon:hover {
+   background-color: #5ed5d6;
+   fill:#000;
+}
+.footer_body_text {
+   font-family: 'Raleway', sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   letter-spacing: 0.01em;
+   color: #ffffff;
+   opacity: 0.5;
+   margin: 30px 0 0 0;
 }
