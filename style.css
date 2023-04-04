@@ -61,6 +61,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .cover_text h1 {
@@ -114,12 +115,14 @@ h2 {
   margin-top: 4.5vh;
 }
 .text_title {
+  height: 60%;
   font-size: 42px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-align: center;
 }
 .text_subtitle {
+  height: 40%;
   font-family: "Merriweather", serif;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
@@ -189,10 +192,10 @@ h2 {
   margin: 0 0 0.5rem 0;
 }
 .featured_works {
-  min-height: 110%;
+  height: 120%;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
   margin: auto;
   background-color: #fff;
@@ -201,10 +204,14 @@ h2 {
 .featured_works_images {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 5rem;
-  width: 66%;
+  margin: 2em;
+  width: 85%;
+
+}
+.featured_works_image {
+   margin: 0.4rem;
 }
 .featured_works_image_1 {
   background: url(./assets/image_1.png);
@@ -244,7 +251,7 @@ h2 {
 }
 .featured_works_image_text {
   display: flex;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 .featured_works_image_text:hover .featured_works_image_text_title {
   display: block;
@@ -265,7 +272,7 @@ h2 {
   margin: auto;
 }
 .services {
-  min-height: 180%;
+  height: 160%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -378,7 +385,7 @@ h2 {
   background-size: cover;
 }
 .team {
-  min-height: 130%;
+  min-height: 150%;
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -466,19 +473,21 @@ h2 {
 }
 
 .swiper {
-  max-width: 100%;
-  height: 115%;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 2%;
+  display: flex;
+  flex-flow: column;
   background-color: #f8fafa;
 }
 .swiper_card {
   width: 60%;
   height: 80%;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   padding: 0;
   margin: auto;
@@ -488,13 +497,13 @@ h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .swiper_card_text {
-  width: 80%;
+  width: 60%;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 50px 60px;
+  padding: 4%;
 }
 .swiper_card_title {
   font-size: 15px;
@@ -521,7 +530,7 @@ h2 {
 }
 
 .companies {
-  min-height: 40%;
+  height: 40%;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -750,6 +759,9 @@ footer {
    .header_wrapper{
       height: 60%;
    }
+   .contact_button a:focus {
+      background-color: #5ed5d6;
+    }
    .cover_text{
       height: 75%;
       width: 90%;
@@ -766,6 +778,7 @@ footer {
    }
    .text_subtitle{
       text-align: center;
+      margin-top: 1rem;
    }
    .about_us{
       padding: 0;
@@ -783,32 +796,73 @@ footer {
       justify-content: center;
       align-items: center;
    }
+   .featured_works{
+      height: 300%;
+   }
    .featured_works_images{
       flex-flow: column;
    }
+   .services {
+      height: 300%;
+   }
    .swiper {
       width: 100%;
-      height: 100%;
-      padding: 0;
+      height: 115%;
       margin: 0;
    }
    .swiper_card {
+      margin-top: 1rem;
       flex-flow: column;
-      width: 100%;
+      height: 80%;
+      width: 95%;
    }
    .swiper_card_text {
       width: 100%;
+      margin-top: 1rem;
+      padding: 0;
    }
-   .title_wrapper {
-      height: 30%;
-   }
+
+ 
    .services_row {
       flex-flow: column;
       margin: 0;
+      width: 95%;
    }
    .services_row_big_image, .services_row_small_image {
-      width: 90%;
-      height: 50%;
+      width: 100%;
+      min-height: 40%;
       margin: 1%;
+   }
+   .services_row1_big_image {
+      height: 70%;
+   }
+   .companies {
+      display: none;
+   }
+   .contacts {
+      height: 140%;
+      margin-bottom: 1rem;
+   }
+   .contacts_body {
+      flex-flow: column;
+   }
+   .form{
+      width: 100%;
+   }
+   .form_button {
+      margin: auto;
+   }
+   .contacts_adress {
+      width: 100%;
+   }
+   footer {
+      height: 20%;
+   }
+   .footer_body {
+      height: 100%;
+      align-items: center;
+   }
+   .footer_body_text{
+      margin: 0.4rem 0 0 0;
    }
 }
