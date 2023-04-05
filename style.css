@@ -52,8 +52,11 @@ h2 {
 }
 
 .cover_text span {
-  background-color: #76f4ea;
   padding: 0 10px;
+}
+
+.header_text_background {
+  background-color: rgb(118, 244, 234, 0.5);
 }
 
 .header_wrapper {
@@ -564,7 +567,7 @@ h2 {
 .swiper_image_background {
   position: absolute;
   z-index: 0;
-  top: -3.5%;
+  top: -10%;
   width: 450px;
   min-height: 412px;
 
