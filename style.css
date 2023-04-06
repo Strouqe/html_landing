@@ -1,13 +1,18 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
-  height: 100vh;
-  max-width: 100vw;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+}
+header {
+  background-color: #eff0f2;
+  height: 90%;
 }
 nav {
   display: flex;
@@ -17,10 +22,6 @@ nav {
   margin: auto;
   margin-top: 0;
   padding-top: 2.5rem;
-}
-header {
-  background-color: #eff0f2;
-  height: 90%;
 }
 .logo {
   border: 5px solid #000000;
@@ -65,6 +66,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-bottom: 5rem;
 }
 
 .cover_text h1 {
@@ -133,9 +135,10 @@ h2 {
 }
 .about_us_body {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   width: 60%;
   justify-content: space-between;
+  margin: auto;
 }
 .about_us_title {
   margin-top: 8vh;
@@ -155,7 +158,7 @@ h2 {
   justify-content: start;
   align-items: center;
   scale: 0.9;
-  margin: 7.5vh 0 0 0;
+  margin: auto;
 }
 .chair_image_background {
   position: absolute;
@@ -175,7 +178,6 @@ h2 {
   width: 10px;
   height: 10px;
   display: inline-block;
-  height: 60%;
   border-radius: 3px;
   background-color: #000;
   opacity: 0.2;
@@ -190,8 +192,8 @@ h2 {
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  margin-top: 6.5vw;
-  max-width: 470px;
+  margin: auto;
+  max-width: 520px;
   min-width: 335px;
 }
 .about_us_text p {
@@ -290,14 +292,14 @@ h2 {
   margin: auto;
 }
 .services {
-  height: 145%;
+  height: 140%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 2%;
+  padding: 5rem 0;
   background-color: #f8fafa;
   z-index: -10;
 }
@@ -314,8 +316,8 @@ h2 {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 61.5%;
-  margin: 5px auto;
+  width: 1130px;
+  margin: 0 auto;
 }
 .overlay {
   background: rgba(0, 0, 0, 0.6);
@@ -327,20 +329,22 @@ h2 {
   height: 350px;
   display: flex;
   z-index: 1;
+  margin: 0.5rem 0.25rem;
 }
 .services_row_small_image {
   width: 42%;
   height: 350px;
   display: flex;
   z-index: 1;
+  margin: 0.5rem 0.25rem;
 }
 .services_card_text {
-  padding: 10px 40px;
+  max-height: 100%;
+  padding: 100px 40px;
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
-  height: 100%;
 }
 .services_card_title {
   font-family: "Merriweather", serif;
@@ -381,34 +385,41 @@ h2 {
 .services_row1_big_image {
   background: url(./assets/service/service_1.png) center no-repeat;
   background-size: cover;
+  min-width: 480px;
 }
 .services_row1_small_image {
   background: url(./assets/service/service_2.png) center no-repeat;
   background-size: cover;
+  min-width: 480px;
 }
 .services_row2_big_image {
   background: url(./assets/service/service_3.png) center no-repeat;
   background-size: cover;
+  min-width: 480px;
 }
 .services_row2_small_image {
   background: url(./assets/service/service_4.png) center no-repeat;
   background-size: cover;
+  min-width: 480px;
 }
 .services_row3_big_image {
   background: url(./assets/service/service_5.png) center no-repeat;
   background-size: cover;
+  min-width: 480px;
 }
 .services_row3_small_image {
   background: url(./assets/service/service_6.png) center no-repeat;
   background-size: cover;
+  min-width: 480px;
 }
 .team {
-  height: 130%;
+  height: 135%;
   width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 5rem 0;
 }
 .team_images {
   display: flex;
@@ -416,6 +427,7 @@ h2 {
   justify-content: center;
   height: 75%;
   width: 76.2%;
+  margin: 1rem;
 }
 .team_image_wrapper {
   margin: 0;
@@ -521,7 +533,7 @@ h2 {
   width: 100%;
   min-height: 105%;
   margin: 0;
-  padding: 2%;
+  padding: 5rem 0;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -536,7 +548,7 @@ h2 {
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 5rem 0;
   background-color: #f8fafa;
 }
 .swiper_card {
@@ -554,6 +566,7 @@ h2 {
 .swiper_image_wrapper {
   position: relative;
   height: 90%;
+  width: 30%;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
@@ -563,18 +576,19 @@ h2 {
 .swiper_card_image {
   z-index: 10;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 2.5rem;
 }
 .swiper_image_background {
   position: absolute;
   z-index: 0;
-  top: -10%;
+  top: 10.25%;
   width: 450px;
   min-height: 412px;
 
   background-color: #eff0f2;
 }
 .swiper_card_text {
-  width: 55%;
+  width: 60%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -635,13 +649,14 @@ h2 {
   padding: 0;
 }
 .swiper_navigation_buttons {
-  width: 15%;
+  width: 212px;
   height: 100%;
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
   align-items: center;
   margin: 0;
+
   padding: 0;
 }
 .swiper_navigation_prev_button {
@@ -685,7 +700,8 @@ h2 {
 }
 
 .companies {
-  height: 40%;
+  max-height: 30%;
+  min-height: 500px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -696,12 +712,11 @@ h2 {
 }
 .companies_logos {
   height: 80%;
-  max-width: 80%;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: auto;
-  margin-top: 3rem;
+  margin: 3rem auto;
   padding: 5px;
 }
 .companies_logo {
@@ -728,6 +743,7 @@ h2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 4rem 0;
 }
 .contacts_body {
   width: 90%;
@@ -736,11 +752,11 @@ h2 {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 5% 0 0 0;
+  margin: auto;
 }
 .form {
-  width: 35%;
-  height: 55%;
+  width: 620px;
+  height: 469px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -755,6 +771,7 @@ h2 {
   display: flex;
   flex-flow: column;
 }
+
 form input {
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -818,8 +835,8 @@ form textarea:focus {
   background-color: #eff0f2;
 }
 .contacts_adress {
-  width: 25%;
-  height: 55%;
+  width: 505px;
+  height: 469px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -828,6 +845,13 @@ form textarea:focus {
   padding: 15px;
   margin: 15px;
 }
+.contacts_adress_text_wrapper {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
 .contacts_adress_text {
   width: 100%;
   height: 20%;
@@ -835,7 +859,7 @@ form textarea:focus {
   display: flex;
   flex-flow: column;
   line-height: 0.1;
-  margin: 0 0 35px 0;
+  margin: 0 0 0 0;
   color: #ffffff;
 }
 .contacts_adress_email {
@@ -880,7 +904,7 @@ footer {
   line-height: 1.4;
   letter-spacing: 0.01em;
   color: #ffffff;
-  margin: 70px 0 0.5% 0;
+  margin: 45px 0 0.6% 0;
 }
 .footer_body_icons {
   display: flex;
@@ -905,7 +929,56 @@ footer {
   letter-spacing: 0.01em;
   color: #ffffff;
   opacity: 0.5;
-  margin: 30px 0 0 0;
+  margin: 30px 0 2rem 0;
+}
+
+
+@media only screen and (max-width: 1130px) {
+  .services_row {
+    width: 490px;
+  }
+}
+@media only screen and (max-width: 1620px) {
+  .swiper_navigation {
+    flex-flow: column;
+    margin-top: 2rem;
+  }
+  .swiper_card {
+    flex-flow: column;
+  }
+  .swiper_card_text {
+    height: 365px;
+    width: 450px;
+  }
+  .swiper_navigation_buttons {
+    margin-top: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1316px) {
+ 
+  .form {
+    width: 505px;
+  }
+  .contacts_adress {
+    width: 505px;
+  }
+  .form_button {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .chair_image img{
+    scale: 0.95;
+  }
+  .swiper_card_text {
+    width: 98%;
+  }
+  .form {
+    width: 95%;
+  }
+  .contacts_adress {
+    width: 95%;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -946,6 +1019,11 @@ footer {
     width: 100%;
     padding: 0;
   }
+  .chair_image {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+  }
   .chair_image_background {
     display: none;
   }
@@ -962,6 +1040,9 @@ footer {
   }
   .featured_works_images {
     flex-flow: column;
+  }
+  .featured_works_image {
+    scale: 0.9;
   }
   .services {
     height: 300%;
@@ -984,8 +1065,7 @@ footer {
   }
   .team_image {
     scale: 1;
-    padding: 0;
-    margin: 0;
+
     align-items: center;
   }
   .team_image_wrapper {
@@ -1012,7 +1092,6 @@ footer {
   }
   .swiper_card_text {
     height: 100%;
-    width: 100%;
     margin-top: 1rem;
     padding: 0;
   }
@@ -1029,23 +1108,47 @@ footer {
   .swiper_navigation_buttons {
     width: 100%;
   }
+  .services {
+    height: 300%;
+    padding: 0;
+  }
+  .services_body {
+    flex-flow: column;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   .services_row {
     flex-flow: column;
     margin: 0;
-    width: 95%;
+    padding: 0;
+    height: 60%;
+    width: 100%;
+    
   }
+
   .services_row_big_image,
   .services_row_small_image {
     width: 100%;
     min-height: 40%;
-    margin: 1%;
+    scale: 0.8;
+    margin: 0;
+    padding: 0;
+    scale: 0.75;
   }
-  .services_row1_big_image {
-    height: 70%;
+  .overlay {
+    
+  }
+  .services_card_text {
+    width: 100%;
+
   }
   .companies {
     display: none;
   }
+
   .contacts {
     height: 140%;
     margin-bottom: 1rem;
@@ -1068,8 +1171,6 @@ footer {
   .footer_body {
     height: 100%;
     align-items: center;
-  }
-  .footer_body_text {
-    margin: 0.4rem 0 0 0;
+    margin: auto;
   }
 }
