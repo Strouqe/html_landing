@@ -136,7 +136,7 @@ h2 {
 .about_us_body {
   display: flex;
   flex-flow: row wrap;
-  width: 60%;
+  width: 1128px;
   justify-content: space-between;
   margin: auto;
 }
@@ -724,6 +724,7 @@ h2 {
   padding: 0;
   height: 30%;
   width: 13%;
+  min-width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -955,7 +956,10 @@ footer {
   }
 }
 @media only screen and (max-width: 1316px) {
- 
+  .about_us_body {
+    width: 60%;
+    margin-bottom: 3rem;
+  }
   .form {
     width: 505px;
   }
