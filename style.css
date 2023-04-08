@@ -10,9 +10,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 header {
-  background-color: #eff0f2;
   height: 90%;
   padding: 0 0 110px 0;
+  background-color: #eff0f2;
 }
 nav {
   display: flex;
@@ -25,10 +25,11 @@ nav {
 }
 .logo {
   border: 5px solid #000000;
+  padding: 8px 13px;
+
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  padding: 8px 13px;
   cursor: default;
 }
 
@@ -78,13 +79,13 @@ h2 {
 }
 .contact_button a {
   display: inline-block;
-  font-size: 18px;
-  letter-spacing: 0.14em;
-  color: #000;
   border: 2px solid #000;
   border-radius: 4px;
   padding: 15px 40px;
   text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.14em;
+  color: #000;
 }
 
 .contact_button a:hover {
@@ -109,7 +110,7 @@ h2 {
   flex-flow: column;
   align-items: center;
   margin: auto;
-  padding-bottom: 120px;
+  padding-bottom: 74px;
   background-color: #f8faf9;
 }
 .title_wrapper {
@@ -137,6 +138,7 @@ h2 {
   display: flex;
   flex-flow: row wrap;
   width: 1128px;
+  height: 80%;
   justify-content: space-between;
   margin: auto;
 }
@@ -166,7 +168,6 @@ h2 {
   top: 8%;
   width: 479px;
   min-height: 412px;
-
   background-color: #eff0f2;
 }
 .chair_image div {
@@ -179,9 +180,9 @@ h2 {
   height: 10px;
   display: inline-block;
   border-radius: 3px;
+  margin: 0 3px;
   background-color: #000;
   opacity: 0.2;
-  margin: 0 3px;
 }
 .bullet_active {
   opacity: 1;
@@ -192,9 +193,9 @@ h2 {
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  margin: auto;
   max-width: 520px;
   min-width: 335px;
+  margin: auto;
 }
 .about_us_text p {
   font-size: 16px;
@@ -212,62 +213,61 @@ h2 {
   margin: 0 0 0.5rem 0;
 }
 .featured_works {
-  height: 110%;
-  width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: auto;
+  height: 110%;
+  width: 100%;
   padding: 0 0 120px 0;
+  margin: auto;
   background-color: #fff;
 }
-
 .featured_works_images {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
   width: 80%;
+  margin: 0;
 }
 .featured_works_image {
   margin: 6.5px;
 }
 .featured_works_image_1 {
+  width: 370px;
+  height: 359px;
   background: url(./assets/image_1.png);
   background-size: cover;
-  width: 370px;
-  height: 359px;
 }
 .featured_works_image_2 {
+  width: 370px;
+  height: 359px;
   background: url(./assets/image_2.png);
   background-size: cover;
-  width: 370px;
-  height: 359px;
 }
 .featured_works_image_3 {
+  width: 370px;
+  height: 359px;
   background: url(./assets/image_3.png);
   background-size: cover;
-  width: 370px;
-  height: 359px;
 }
 .featured_works_image_4 {
+  width: 370px;
+  height: 359px;
   background: url(./assets/image_4.png);
   background-size: cover;
-  width: 370px;
-  height: 359px;
 }
 .featured_works_image_5 {
+  width: 370px;
+  height: 359px;
   background: url(./assets/image_5.png);
   background-size: cover;
-  width: 370px;
-  height: 359px;
 }
 .featured_works_image_6 {
-  background: url(./assets/image_6.png);
-  background-size: cover;
   width: 370px;
   height: 359px;
+  background: url(./assets/image_6.png);
+  background-size: cover;
 }
 .featured_works_image_text {
   display: flex;
@@ -277,39 +277,38 @@ h2 {
   display: block;
 }
 .featured_works_image_text_title {
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  margin: auto;
+  display: none;
   justify-content: center;
+  margin: auto;
   align-items: center;
   color: #5ed5d6;
   text-decoration: underline;
-  display: none;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
-
 .featured_works_image_text_title a {
   margin: auto;
 }
 .services {
-  height: 130%;
-  width: 100%;
+  z-index: -10;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
   padding: 0 0 120px 0;
+  margin: auto;
+  height: 130%;
+  width: 100%;
   background-color: #f8fafa;
-  z-index: -10;
 }
 .services_body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
 }
 .services_row {
   display: flex;
@@ -320,47 +319,47 @@ h2 {
   margin: 0 auto;
 }
 .overlay {
-  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 .services_row_big_image {
   z-index: 1;
+  display: flex;
   width: 55%;
   height: 350px;
-  display: flex;
   margin: 6.5px;
 }
 .services_row_small_image {
   z-index: 1;
+  display: flex;
   width: 42%;
   height: 350px;
-  display: flex;
   margin: 6.5px;
 }
 .services_card_text {
-  max-height: 350px;
-  padding: 100px 40px;
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
+  max-height: 350px;
+  padding: 100px 40px;
 }
 .services_card_title {
   height: 20%;
+  margin: 0;
   font-family: "Merriweather", serif;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  margin: 0;
   color: #fff;
 }
 .services_card_subtitle {
   height: 150px;
+  margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 28px;
   letter-spacing: 0.025em;
-  margin: 0 0 0 0;
   color: #fff;
 }
 .services_card_subtitle p {
@@ -387,48 +386,48 @@ h2 {
   margin: 0 0 0 10px;
 }
 .arrow {
-  fill: #ffffff;
   width: 30px;
   height: 30px;
   padding: 0 0 12px 10px;
+  fill: #ffffff;
 }
 .services_row1_big_image {
+  min-width: 480px;
   background: url(./assets/service/service_1.png) center no-repeat;
   background-size: cover;
-  min-width: 480px;
 }
 .services_row1_small_image {
+  min-width: 480px;
   background: url(./assets/service/service_2.png) center no-repeat;
   background-size: cover;
-  min-width: 480px;
 }
 .services_row2_big_image {
+  min-width: 480px;
   background: url(./assets/service/service_3.png) center no-repeat;
   background-size: cover;
-  min-width: 480px;
 }
 .services_row2_small_image {
+  min-width: 480px;
   background: url(./assets/service/service_4.png) center no-repeat;
   background-size: cover;
-  min-width: 480px;
 }
 .services_row3_big_image {
+  min-width: 480px;
   background: url(./assets/service/service_5.png) center no-repeat;
   background-size: cover;
-  min-width: 480px;
 }
 .services_row3_small_image {
+  min-width: 480px;
   background: url(./assets/service/service_6.png) center no-repeat;
   background-size: cover;
-  min-width: 480px;
 }
 .team {
-  height: 135%;
-  width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  height: 135%;
+  width: 100%;
   padding-bottom: 120px;
 }
 .team_images {
@@ -442,9 +441,9 @@ h2 {
   margin: 0;
 }
 .team_image {
+  display: flex;
   width: 350px;
   height: 440px;
-  display: flex;
   padding: 5% 5%;
   margin: 6.5px;
 }
@@ -467,15 +466,15 @@ h2 {
 }
 /* end triangle */
 .team_member_text {
+  position: relative;
   display: none;
   align-self: flex-end;
-  height: 55%;
-  width: 100%;
-  background-color: #6df6eb;
-  padding: 0 25px;
   align-items: start;
   justify-content: center;
-  position: relative;
+  height: 55%;
+  width: 100%;
+  padding: 0 25px;
+  background-color: #6df6eb;
   filter: drop-shadow(2.735px 6.444px 8px rgba(20, 20, 21, 0.18));
   opacity: 0.98;
 }
@@ -508,8 +507,8 @@ h2 {
   flex-flow: row wrap;
   justify-content: space-between;
   width: 40%;
-  margin: 5% 0 0 0;
   padding: 0;
+  margin: 5% 0 0 0;
 }
 .team_image1 {
   background: url(./assets/team/team_1.png) center no-repeat;
@@ -537,54 +536,54 @@ h2 {
 }
 
 .swiper {
-  width: 100%;
-  min-height: 90%;
-  margin: 0;
-  padding-bottom: 164px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  min-height: 90%;
+  padding-bottom: 164px;
+  margin: 0;
   background-color: #f8fafa;
 }
 .card_wrapper {
-  width: 100%;
-  height: 440px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  width: 100%;
+  height: 440px;
   padding: 0;
+  margin: 0;
   background-color: #f8fafa;
 }
 .swiper_card {
-  width: 70%;
-  height: 440px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
+  width: 70%;
+  height: 440px;
   padding: 0;
   margin: 0 auto;
   background-color: #f8fafa;
 }
 .swiper_image_wrapper {
   position: relative;
-  height: 440px;
-  width: 450px;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
+  height: 440px;
+  width: 450px;
 }
 
 .swiper_card_image {
   z-index: 10;
   height: 440px;
   width: 370px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 2.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .swiper_image_background {
   position: absolute;
@@ -595,22 +594,22 @@ h2 {
   background-color: #eff0f2;
 }
 .swiper_card_text {
-  width: 60%;
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  width: 60%;
   padding: 4%;
   border-radius: 3px;
   background-color: #eaebed;
+  text-align: center;
 }
 .swiper_card_title {
+  margin: 0 0 20px 0;
   font-size: 15px;
   font-weight: 400;
   color: #787878;
   font-style: italic;
-  margin: 0 0 20px 0;
 }
 .swiper_card_title span {
   font-family: "Merriweather", serif;
@@ -621,181 +620,179 @@ h2 {
   font-style: normal;
 }
 .swiper_card_subtitle {
+  margin: 0 0 25px 0;
   font-family: "Raleway", sans-serif;
   line-height: 27px;
   font-weight: 400;
   letter-spacing: 0.06em;
   color: #000;
-  margin: 0 0 25px 0;
 }
 .star {
   width: 15px;
   height: 14px;
 }
 .swiper_navigation {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
   width: 70%;
   height: 10%;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0;
   margin: 0 auto;
   margin-top: 25px;
-  padding: 0;
 }
 .swiper_navigation .bullets {
-  width: 36%;
-  height: 17px;
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  width: 36%;
+  height: 17px;
   padding: 0;
+  margin: 0;
 }
 .swiper_navigation_buttons {
-  width: 140px;
-  height: 100%;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px 0 0;
+  width: 140px;
+  height: 100%;
   padding: 0;
+  margin: 0 20px 0 0;
 }
 .swiper_navigation_prev_button {
-  width: 53px;
-  height: 53px;
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  width: 53px;
+  height: 53px;
   padding: 0;
   border: none;
   border-radius: 5px;
+  margin: 0;
   filter: drop-shadow(3.126px 7.364px 5.5px rgba(20, 20, 21, 0.05));
 }
 .swiper_navigation_prev_button button {
+  justify-self: center;
   height: 100%;
   width: 100%;
   border: none;
   background-color: #ffffff;
-  justify-self: center;
 }
 .swiper_navigation_next_button {
-  width: 53px;
-  height: 53px;
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  width: 53px;
+  height: 53px;
   padding: 0;
   border-radius: 3px;
+  margin: 0;
   filter: drop-shadow(2.344px 5.523px 5.5px rgba(20, 20, 21, 0.1));
 }
 .swiper_navigation_next_button button {
+  justify-self: center;
   height: 100%;
   width: 100%;
   border: none;
   background-color: #71f6eb;
-  justify-self: center;
 }
 
 .companies {
-  height: 350px;
-  width: 70%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 120px auto;
+  height: 350px;
+  width: 70%;
   padding: 0;
+  margin: 120px auto;
 }
 .companies_logos {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
+  height: 100%;
+  width: 100%;
   padding: 5px;
 }
 .companies_logo {
-  margin-top: 2%;
-  padding: 0;
-  height: 30%;
-  width: 13%;
-  min-width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30%;
+  width: 13%;
+  min-width: 150px;
+  padding: 0;
+  margin-top: 2%;
 }
 .companies_logo img {
   height: 80%;
   width: 80%;
-  margin: auto;
   padding: 0;
+  margin: auto;
 }
 
 .contacts {
-  height: 100%;
-  max-width: 100%;
-  background: url(./assets/footer_background.png);
-  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  height: 100%;
+  max-width: 100%;
   padding: 120px 0;
+  background: url(./assets/footer_background.png);
+  background-size: cover;
 }
 .contacts_body {
-  width: 90%;
-  height: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  height: 100%;
   margin: auto;
 }
 .form {
-  width: 620px;
-  height: 469px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(2, 22, 35, 0.7);
+  width: 620px;
+  height: 469px;
   padding: 15px;
   margin: 15px;
+  background-color: rgba(2, 22, 35, 0.7);
 }
 .form form {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-flow: column;
+  width: 100%;
+  height: 100%;
 }
-
 form input {
   height: 40px;
+  padding: 0 0 0 5px;
   border: 1px solid rgba(255, 255, 255, 0);
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   margin: 0 0 20px 0;
+  background: transparent;
   font-size: 18px;
   color: #ffffff;
-  padding: 0 0 0 5px;
-  background: transparent;
 }
 form textarea {
   width: 100%;
   height: 140px;
+  padding: 0 0 0 5px;
   border: 1px solid rgba(255, 255, 255, 0);
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-  font-size: 18px;
-  color: #ffffff;
-  padding: 0 0 0 5px;
   margin: 0 0 30px 0;
   background: transparent;
+  font-size: 18px;
+  color: #ffffff;
   resize: none;
   overflow: auto;
   transition-duration: 0.5s;
@@ -807,7 +804,7 @@ form input::placeholder {
   opacity: 0.6;
 }
 form input:focus {
-  border-bottom: 1px solid #5ed5d6;
+  border-bottom: 1px solid #6eeee4;
   outline: none;
 }
 form textarea::placeholder {
@@ -818,73 +815,73 @@ form textarea::placeholder {
   opacity: 0.6;
 }
 form textarea:focus {
-  border-bottom: 1px solid #5ed5d6;
+  border-bottom: 1px solid #6eeee4;
   outline: none;
 }
 .form_button {
-  font-family: "Raleway", sans-serif;
   display: inline-block;
-  font-size: 18px;
-  letter-spacing: 0.14em;
-  color: #000;
+  width: 260px;
+  padding: 15px 40px;
   border: 2px solid #000;
   border-radius: 4px;
-  padding: 15px 40px;
-  text-decoration: none;
-  background-color: #5ed5d6;
-  width: 260px;
   margin-top: 5%;
+  background-color: #6eeee4;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.14em;
 }
 .form_button:hover {
   background-color: #eff0f2;
 }
 .contacts_adress {
-  width: 505px;
-  height: 469px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(2, 22, 35, 0.7);
+  width: 505px;
+  height: 469px;
   padding: 15px;
   margin: 15px;
+  background-color: rgba(2, 22, 35, 0.7);
 }
 .contacts_adress_text_wrapper {
-  height: 35%;
-  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  height: 35%;
+  width: 100%;
 }
 .contacts_adress_text {
-  width: 100%;
-  height: 20%;
-  font-size: 0.8rem;
   display: flex;
   flex-flow: column;
-  line-height: 0.1;
+  width: 100%;
+  height: 20%;
   margin: 0 0 0 0;
   color: #ffffff;
+  font-size: 0.8rem;
+  line-height: 0.1;
 }
 .contacts_adress_email {
-  width: 100%;
-  height: 20%;
   display: flex;
   flex-flow: column;
+  width: 100%;
+  height: 20%;
+  margin: 0 0 5px 0;
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  color: #ffffff;
-  margin: 0 0 5px 0;
   line-height: 0.1;
 }
 .contacts_iframe {
-  width: 100%;
-  height: 60%;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 60%;
   background-color: rgba(2, 22, 35, 0.7);
 }
 .contacts_iframe iframe {
@@ -903,43 +900,37 @@ footer {
   text-align: center;
 }
 .footer_body_title {
+  margin: 45px 0 0.6% 0;
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.01em;
-  color: #ffffff;
-  margin: 45px 0 0.6% 0;
 }
 .footer_body_icons {
   display: flex;
   justify-content: center;
 }
 .footer_body_icon {
-  background-color: rgba(138, 138, 138, 0.4);
-  padding: 10px;
   width: 40px;
   height: 40px;
-  fill: #ffffff;
+  padding: 10px;
   margin: 0 5px;
+  background-color: rgba(138, 138, 138, 0.4);
+  fill: #ffffff;
 }
 .footer_body_icon:hover {
   background-color: #5ed5d6;
   fill: #000;
 }
 .footer_body_text {
+  margin: 30px 0 2rem 0;
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.01em;
-  color: #ffffff;
   opacity: 0.5;
-  margin: 30px 0 2rem 0;
-}
-
-@media only screen and (max-width: 1130px) {
-  .services_row {
-    width: 490px;
-  }
 }
 @media only screen and (max-width: 1620px) {
   .swiper_navigation {
@@ -954,11 +945,9 @@ footer {
     flex-flow: column;
     height: 900px;
   }
-  .swiper_image_wrapper {
-  }
   .card_wrapper {
-    height: 1120px;
     justify-content: space-between;
+    height: 1120px;
   }
   .swiper_card_text {
     height: 365px;
@@ -971,14 +960,14 @@ footer {
     margin-bottom: 120px;
   }
   .swiper_navigation_buttons {
-    margin: 0;
     height: 53px;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 1316px) {
   .about_us_body {
     width: 60%;
-    margin-bottom: 3rem;
+
   }
   .form {
     width: 505px;
@@ -990,18 +979,9 @@ footer {
     margin: auto;
   }
 }
-@media only screen and (max-width: 505px) {
-  .chair_image img {
-    scale: 0.95;
-  }
-  .swiper_card_text {
-    width: 98%;
-  }
-  .form {
-    width: 95%;
-  }
-  .contacts_adress {
-    width: 95%;
+@media only screen and (max-width: 1130px) {
+  .services_row {
+    width: 490px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1022,20 +1002,20 @@ footer {
     display: none;
   }
   .title_wrapper {
-    width: 95%;
-    height: 20%;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    width: 95%;
+    height: 20%;
     margin: 40px auto;
   }
   .text_subtitle {
-    text-align: center;
     margin-top: 1rem;
+    text-align: center;
   }
   .about_us {
-    padding: 0;
     height: 160%;
+    padding: 0;
   }
   .about_us_body {
     flex-flow: column;
@@ -1070,9 +1050,9 @@ footer {
     height: 300%;
   }
   .team {
+    justify-content: space-around;
     height: 370%;
     width: 100%;
-    justify-content: space-around;
     padding-bottom: 60px;
   }
   .team .title_wrapper {
@@ -1087,8 +1067,6 @@ footer {
     margin-top: 5rem;
   }
   .team_image {
-    scale: 1;
-
     align-items: center;
   }
   .team_image_wrapper {
@@ -1102,8 +1080,8 @@ footer {
   .swiper {
     height: 1220px;
     width: 100%;
-    margin: 0;
     padding: 40px auto;
+    margin: 0;
   }
   .swiper_card {
     flex-flow: column;
@@ -1111,15 +1089,11 @@ footer {
     width: 95%;
     padding: 0;
   }
-  .card_wrapper {
-  }
-  .swiper_card_image {
-  }
   .swiper_card_text {
     height: 100%;
     width: 95%;
     margin: 0 auto;
-    scale: 0.9;
+
   }
   .swiper_image_background {
     display: none;
@@ -1130,8 +1104,6 @@ footer {
   }
   .swiper_navigation {
     margin: 20px auto 60px auto;
-  }
-  .swiper_navigation_buttons {
   }
   .services {
     height: 300%;
@@ -1152,14 +1124,12 @@ footer {
     height: 60%;
     width: 100%;
   }
-
   .services_row_big_image,
   .services_row_small_image {
     width: 100%;
     min-height: 40%;
-    scale: 0.8;
-    margin: 0;
     padding: 0;
+    margin: 0;
     scale: 0.75;
   }
   .services_card_text {
@@ -1189,8 +1159,22 @@ footer {
     height: 20%;
   }
   .footer_body {
-    height: 100%;
     align-items: center;
+    height: 100%;
     margin: auto;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .chair_image img {
+    scale: 0.95;
+  }
+  .swiper_card_text {
+    width: 98%;
+  }
+  .form {
+    width: 95%;
+  }
+  .contacts_adress {
+    width: 95%;
   }
 }
