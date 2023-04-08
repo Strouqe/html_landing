@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-
 }
 
 body {
@@ -13,6 +12,7 @@ body {
 header {
   background-color: #eff0f2;
   height: 90%;
+  padding: 0 0 110px 0;
 }
 nav {
   display: flex;
@@ -66,7 +66,6 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding-bottom: 5rem;
 }
 
 .cover_text h1 {
@@ -110,7 +109,7 @@ h2 {
   flex-flow: column;
   align-items: center;
   margin: auto;
-  padding-top: 4%;
+  padding-bottom: 120px;
   background-color: #f8faf9;
 }
 .title_wrapper {
@@ -118,6 +117,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 120px auto;
 }
 .text_title {
   height: 60%;
@@ -218,7 +218,7 @@ h2 {
   flex-flow: column;
   align-items: center;
   margin: auto;
-  padding: 3rem 0;
+  padding: 0 0 120px 0;
   background-color: #fff;
 }
 
@@ -227,11 +227,11 @@ h2 {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 2em;
+  margin: 0;
   width: 80%;
 }
 .featured_works_image {
-  margin: 0.4rem;
+  margin: 6.5px;
 }
 .featured_works_image_1 {
   background: url(./assets/image_1.png);
@@ -292,14 +292,14 @@ h2 {
   margin: auto;
 }
 .services {
-  height: 140%;
+  height: 130%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 5rem 0;
+  padding: 0 0 120px 0;
   background-color: #f8fafa;
   z-index: -10;
 }
@@ -308,7 +308,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 4rem auto;
+  margin: 0 auto;
   width: 100%;
 }
 .services_row {
@@ -325,21 +325,21 @@ h2 {
   height: 100%;
 }
 .services_row_big_image {
+  z-index: 1;
   width: 55%;
   height: 350px;
   display: flex;
-  z-index: 1;
-  margin: 0.5rem 0.25rem;
+  margin: 6.5px;
 }
 .services_row_small_image {
+  z-index: 1;
   width: 42%;
   height: 350px;
   display: flex;
-  z-index: 1;
-  margin: 0.5rem 0.25rem;
+  margin: 6.5px;
 }
 .services_card_text {
-  max-height: 100%;
+  max-height: 350px;
   padding: 100px 40px;
   display: flex;
   flex-direction: column;
@@ -347,6 +347,7 @@ h2 {
   justify-content: center;
 }
 .services_card_title {
+  height: 20%;
   font-family: "Merriweather", serif;
   font-size: 20px;
   font-weight: 700;
@@ -355,15 +356,24 @@ h2 {
   color: #fff;
 }
 .services_card_subtitle {
+  height: 150px;
   font-family: "Raleway", sans-serif;
   line-height: 28px;
   letter-spacing: 0.025em;
   margin: 0 0 0 0;
   color: #fff;
 }
+.services_card_subtitle p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
 
 .services_card_link a {
   display: flex;
+  margin-top: 2rem;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -419,7 +429,7 @@ h2 {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
+  padding-bottom: 120px;
 }
 .team_images {
   display: flex;
@@ -427,7 +437,6 @@ h2 {
   justify-content: center;
   height: 75%;
   width: 76.2%;
-  margin: 1rem;
 }
 .team_image_wrapper {
   margin: 0;
@@ -437,7 +446,7 @@ h2 {
   height: 440px;
   display: flex;
   padding: 5% 5%;
-  margin: 10px;
+  margin: 6.5px;
 }
 .team_image:hover .team_member_text {
   display: flex;
@@ -528,12 +537,10 @@ h2 {
 }
 
 .swiper {
-  position: relative;
-  height: 60%;
   width: 100%;
-  min-height: 105%;
+  min-height: 90%;
   margin: 0;
-  padding: 5rem 0;
+  padding-bottom: 164px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -542,31 +549,30 @@ h2 {
 }
 .card_wrapper {
   width: 100%;
-  height: 70%;
+  height: 440px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 5rem 0;
+  padding: 0;
   background-color: #f8fafa;
 }
 .swiper_card {
   width: 70%;
-  height: 60%;
+  height: 440px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
   padding: 0;
   margin: 0 auto;
-
   background-color: #f8fafa;
 }
 .swiper_image_wrapper {
   position: relative;
-  height: 90%;
-  width: 30%;
+  height: 440px;
+  width: 450px;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
@@ -575,16 +581,17 @@ h2 {
 
 .swiper_card_image {
   z-index: 10;
+  height: 440px;
+  width: 370px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 2.5rem;
 }
 .swiper_image_background {
   position: absolute;
   z-index: 0;
-  top: 10.25%;
+  top: -10;
   width: 450px;
   min-height: 412px;
-
   background-color: #eff0f2;
 }
 .swiper_card_text {
@@ -626,20 +633,18 @@ h2 {
   height: 14px;
 }
 .swiper_navigation {
-  position: relative;
-  bottom: 8%;
-  width: 75%;
+  width: 70%;
   height: 10%;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 25px;
   padding: 0;
 }
 .swiper_navigation .bullets {
-  top: -5%;
-  width: 41.5%;
+  width: 36%;
   height: 17px;
   display: flex;
   flex-flow: row;
@@ -649,14 +654,13 @@ h2 {
   padding: 0;
 }
 .swiper_navigation_buttons {
-  width: 212px;
+  width: 140px;
   height: 100%;
   display: flex;
   flex-flow: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin: 0;
-
+  margin: 0 20px 0 0;
   padding: 0;
 }
 .swiper_navigation_prev_button {
@@ -700,23 +704,22 @@ h2 {
 }
 
 .companies {
-  max-height: 30%;
-  min-height: 500px;
-  width: 100%;
+  height: 350px;
+  width: 70%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 120px auto;
   padding: 0;
 }
 .companies_logos {
-  height: 80%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 3rem auto;
+
   padding: 5px;
 }
 .companies_logo {
@@ -744,7 +747,7 @@ h2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 120px 0;
 }
 .contacts_body {
   width: 90%;
@@ -933,7 +936,6 @@ footer {
   margin: 30px 0 2rem 0;
 }
 
-
 @media only screen and (max-width: 1130px) {
   .services_row {
     width: 490px;
@@ -942,17 +944,35 @@ footer {
 @media only screen and (max-width: 1620px) {
   .swiper_navigation {
     flex-flow: column;
-    margin-top: 2rem;
+    margin-top: 0px;
+  }
+  .swiper {
+    height: 1450px;
+    padding-bottom: 0;
   }
   .swiper_card {
     flex-flow: column;
+    height: 900px;
+  }
+  .swiper_image_wrapper {
+  }
+  .card_wrapper {
+    height: 1120px;
+    justify-content: space-between;
   }
   .swiper_card_text {
     height: 365px;
     width: 450px;
+    margin-top: 60px;
+    text-align: start;
+  }
+  .swiper_navigation {
+    height: 108px;
+    margin-bottom: 120px;
   }
   .swiper_navigation_buttons {
-    margin-top: 1.5rem;
+    margin: 0;
+    height: 53px;
   }
 }
 @media only screen and (max-width: 1316px) {
@@ -971,7 +991,7 @@ footer {
   }
 }
 @media only screen and (max-width: 505px) {
-  .chair_image img{
+  .chair_image img {
     scale: 0.95;
   }
   .swiper_card_text {
@@ -1007,7 +1027,7 @@ footer {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 40px auto;
   }
   .text_subtitle {
     text-align: center;
@@ -1035,12 +1055,10 @@ footer {
     width: 80%;
     height: 60%;
     margin: auto;
-    justify-content: center;
-    align-items: center;
   }
   .featured_works {
     height: 300%;
-    padding: 0;
+    padding-bottom: 40px;
   }
   .featured_works_images {
     flex-flow: column;
@@ -1055,6 +1073,7 @@ footer {
     height: 370%;
     width: 100%;
     justify-content: space-around;
+    padding-bottom: 60px;
   }
   .team .title_wrapper {
     height: 6%;
@@ -1081,40 +1100,42 @@ footer {
     scale: 0.9;
   }
   .swiper {
+    height: 1220px;
     width: 100%;
-    height: 140%;
     margin: 0;
+    padding: 40px auto;
   }
   .swiper_card {
-    margin-top: 1rem;
     flex-flow: column;
     height: 85%;
     width: 95%;
+    padding: 0;
   }
   .card_wrapper {
-    justify-content: space-between;
+  }
+  .swiper_card_image {
   }
   .swiper_card_text {
     height: 100%;
-    margin-top: 1rem;
-    padding: 0;
+    width: 95%;
+    margin: 0 auto;
+    scale: 0.9;
   }
   .swiper_image_background {
     display: none;
   }
+  .swiper_image_wrapper {
+    width: 372px;
+    scale: 0.9;
+  }
   .swiper_navigation {
-    bottom: -2%;
-    flex-flow: column;
-    height: 10%;
-    width: 50%;
-    align-self: end;
+    margin: 20px auto 60px auto;
   }
   .swiper_navigation_buttons {
-    width: 100%;
   }
   .services {
     height: 300%;
-    padding: 0;
+    padding-bottom: 20px;
   }
   .services_body {
     flex-flow: column;
@@ -1130,7 +1151,6 @@ footer {
     padding: 0;
     height: 60%;
     width: 100%;
-    
   }
 
   .services_row_big_image,
@@ -1142,12 +1162,8 @@ footer {
     padding: 0;
     scale: 0.75;
   }
-  .overlay {
-    
-  }
   .services_card_text {
     width: 100%;
-
   }
   .companies {
     display: none;
