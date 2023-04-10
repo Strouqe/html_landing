@@ -613,6 +613,7 @@ h2 {
   font-style: normal;
 }
 .swiper_card_subtitle {
+  width: 72.5%;
   margin: 0 0 25px 0;
   font-family: "Raleway", sans-serif;
   line-height: 27px;
@@ -946,14 +947,14 @@ footer {
     height: 1120px;
   }
   .swiper_card_text {
-    height: 365px;
-    width: 450px;
+    height: 100%;
+    width: 95%;
     margin-top: 60px;
     text-align: start;
   }
   .swiper_navigation {
     height: 108px;
-    margin-bottom: 120px;
+    margin: 20px auto 60px auto;
   }
   .swiper_navigation_buttons {
     height: 53px;
@@ -1087,6 +1088,9 @@ footer {
     width: 95%;
     padding: 0;
   }
+  .swiper_card_subtitle {
+    width: 90%;
+  }
   .swiper_card_text {
     height: 100%;
     width: 95%;
@@ -1169,9 +1173,7 @@ footer {
   .chair_image img {
     scale: 0.95;
   }
-  .swiper_card_text {
-    width: 98%;
-  }
+
   .form {
     width: 95%;
   }
