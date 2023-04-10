@@ -1037,10 +1037,13 @@ footer {
   }
   .featured_works_images {
     flex-flow: column;
-
   }
-  .featured_works_image {
+  .featured_works_image_1, .featured_works_image_2, .featured_works_image_3, .featured_works_image_4, .featured_works_image_5, .featured_works_image_6 {
+    width: 350px;
+ 
+  }
 
+  .featured_works_image {
   }
   .services {
     height: 300%;
